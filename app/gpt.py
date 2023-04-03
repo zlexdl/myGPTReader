@@ -213,3 +213,14 @@ def get_voice_file_from_text(text, voice_name=None):
             logging.error("Error details: {}".format(
                 cancellation_details.error_details))
     return file_name
+
+# text = '''请总结以下这部分文字
+# ARB团队卖币危机思考：
+# 1、要不要卖币出逃？当初买入理由是否依然成立？有没有因这次事件产生变化？
+# 2、现在主要舆论是“卖”的，那对手盘是谁？是谁在买？现在买ARB的人不怕官方再卖币吗？
+# 3、OP开局被盗2000万币，FIL开局直接测试币变主网币，并充值到交易所卖币，两者都曾被骂，后续币价发展如何？'''
+#
+#
+# gpt_response, total_llm_model_tokens, total_embedding_model_tokens = get_answer_from_chatGPT(text)
+#
+# logging.info(gpt_response)
